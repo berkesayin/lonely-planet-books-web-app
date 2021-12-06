@@ -49,7 +49,27 @@ There are 10 different regional destinations to travel, so there are 10 differen
 - Middle East
 - Antarctica
 
-Customer (user) can search for the category. 
+Customer (user) can search products for the regional category. 
 
+### Customer Register and Sign-In <a name="register-sign-in"></a>
 
+Customers(users) must reigster and sign-in in order to buy a product. This sign-in / register operations is provided by user interface at the front-end and a database system at the back-end. 
 
+#### Register
+![pic](images/img-readme/register.png)
+
+#### Sign - In
+![pic](images/img-readme/sign-in.png)
+
+#### Customer's List
+This data is pulled from the database in a dynamic way. When a new user is registered, it is first added to database and then it is pulled back to website in order for admin to see the customers on admin panel. 
+
+![pic](images/img-readme/customers-list.png)
+
+#### Customer's List Database View
+
+![pic](images/img-readme/customers-db.png)
+
+- Database Name: customers
+- Table Name: customersinfo
+- Columns: id(Primary Key), name, surname, city, birthdate, email, password, gender.
