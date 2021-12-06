@@ -1,0 +1,76 @@
+body {
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr; 
+}
+
+
+/*Nav Styles*/
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.left-side {
+    display: flex;
+}
+
+.nav-wrapper .left-side div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;  /*animation*/
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;   /*no underline, instead later we will use border-bottom*/
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+    color: black;
+}
+
+.active-nav-link {
+    border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+    color: black !important;
+}
+
+
+/*About page*/
+.four-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img {
+    width: 40%;
+    margin-left: 10px;
+}
+
+.profile-content-wrapper {
+    padding: 30px;
+}
+
+.profile-content-wrapper h1 {
+    color: lightseagreen;
+}

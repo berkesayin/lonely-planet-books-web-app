@@ -1,0 +1,4 @@
+-VS code'da open folder diyerek admin klasörünü seçelim. 
+
+-Bizim bütün dosyalarımız pages altındaki html dosyalarıydı. anasayfa.html sayfası yönetici login yaptıktan sonra gösterilecek 
+olan sayfaydı. anasayfa.html sayfasında ihtiyacımız olmayan bir çok sayfa var onları silelim. 

@@ -1,0 +1,156 @@
+/*The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages 
+without having to use floats and positioning. An HTML element becomes a grid container when its display property is set 
+to grid or inline-grid.*/
+/*
+display: grid;
+grid-template-columns: auto auto auto;  otomatik olarak 3 sütun ayarla mesela 9 item varsa 3 sütun, her sütunda 3 item
+*/
+
+/*To start using the Flexbox model, you need to first define a flex container.The flex container becomes flexible by setting 
+the display property to flex. The flex container properties are:
+
+-flex-direction: The flex-direction property defines in which direction the container wants to stack the flex items:  row / column
+-flex-wrap: 
+-flex-flow
+-justify-content: center: (dikeyde y ekseni) The justify-content: center property is used to align the flex items at the center
+-align-items: center: (yatayda x ekseni) The align-items: center property is used to align the flex items at the center
+-align-content
+*/
+
+/*Master Styles*/
+body {
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr; 
+}
+
+/*Nav Styles*/
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.left-side {
+    display: flex;
+}
+
+.nav-wrapper .left-side div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;  /*animation*/
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;   /*no underline, instead later we will use border-bottom*/
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+    color: black;
+}
+
+.active-nav-link {
+    border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+    color: black !important;
+}
+
+
+/*Port-folio Styles*/
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.portfolio-item-wrapper {
+    position: relative;  /*for more flexibility on pictures*/
+}
+
+.portfolio-img-background {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no repeat;
+}
+
+/*logos and texts*/
+.img-text-wrapper {
+    /*make each item together without line breaks or empty spaces*/
+    position: absolute; /*first, we used position: relative above at .portfolio-item-wrapper*/
+    top: 0;
+    display: flex;
+    flex-direction: column;  /*for logo and text to be at vertical line like column*/
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo-wrapper img {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+/*we first need to mak the subtitle invisible and then animate it and change its color and have it appear later on. right now it is 
+black and so let's first make sure we have these colors and the style right for the subtitle and then we'll talk about how we can
+use javascript to animate that*/
+
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    color: transparent;
+    font-weight: 600;
+}
+
+/*Needs to be more specific with selector*/
+.img-text-wrapper:hover .subtitle {
+    font-weight: 600;
+    color: lightseagreen;
+}
+
+/*this is how we can have those images get darkened. for this, we can create a class here(img-darken) and*/
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
+/*we are going to use javascript to dynamically add this class when someone is hovering over it*/
+
+/*About page*/
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img {
+    width: 100%;
+    margin-left: 10px;
+}
+
+.profile-content-wrapper {
+    padding: 30px;
+}
+
+.profile-content-wrapper h1 {
+    color: lightseagreen;
+}

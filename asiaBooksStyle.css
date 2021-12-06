@@ -1,0 +1,103 @@
+/* for everything */
+* {
+    box-sizing: border-box;  /*padding doesn't affect it*/
+    margin: 0;
+    padding:0;
+
+}
+
+/*for body*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff;
+    color: #000;  /*color of the text = black*/
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.myNav > a  {
+    text-decoration: none !important;
+}
+
+.my-container {
+    width: 100%; 
+    /* max-width: 1100px; */
+    /*margin: auto; in the middle*/
+}
+
+
+/*Showcase*/
+.showcase{
+    width: 95%;
+    margin: 0 auto; /*in the middle*/
+    border-radius: 20px;
+    height: 630px;
+    background: url('images/asia/asia2.jpg') no-repeat center center/cover;
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    padding-top: 50px;
+}
+
+.showcase h2, .showcase p{
+    margin-bottom: 10px;
+}
+
+.showcase .btn {
+    margin-top: 20px;
+}
+
+
+/*Asia*/
+.asia {
+    width: 95%;
+    height: 450px;
+    margin: 0 auto; /*in the middle*/
+    border-radius: 20px;
+    background: url('images/europe/europe4.jpg') no-repeat center center/cover;
+}
+
+.asia .content {
+    width: 55%;
+    padding: 100px 0 0 30px;
+}
+
+.left-frame img {
+    margin-top: 50px;
+    border-radius: 15px;
+}
+
+.dark {
+    color: #fff;
+}
+
+.dark .btn {
+    background: #f4f4f4;
+    color: #333;
+}
+
+/*Follow Lonely Planet*/
+.follow {
+    display: flex;  /*make icons horizontal*/
+    align-items: center;
+    justify-content: flex-start;
+    margin: 30px 0 30px;
+}
+
+.follow p {
+    margin-left: 55px;
+}
+
+.follow * {  /*everytihng inside follow class*/
+    margin-right: 10px;
+}
+
+footer  a  {
+    text-decoration: none !important;
+}
+
+
