@@ -21,6 +21,7 @@
 
 ### Contents
 * [Homepage](#homepage)
+* [About Databases](#databases)
 * [Customer Register and Sign-In](#register-sign-in)
 * [Asia Books Product Page Customer Layout](#asia-books-customer-panel)
 * [Admin Sign-In Panel](#admin-sign-in)
@@ -50,6 +51,18 @@ There are 10 different regional destinations to travel, so there are 10 differen
 - Antarctica
 
 Customer (user) can search products for the regional category. 
+
+### About Databases <a name="databases"></a>
+- This is a web application for selling the "Lonely Planet" publishing books. So there is lots of data about products and customers here. So, we need to store and manage the data in a healthy way, so that we use here MySql system. 
+
+- #### The data about our customers: 
+- Database Name: customers
+- Table Name: customersinfo
+- Columns: id(Primary Key), name, surname, city, birthdate, email, password, gender.
+
+- #### The data about our products: 
+- Database name: books
+- Tables: asiabooks, europebooks, northamericabooks, southamericabooks, africabooks, asutraliabooks, caribbeanbooks, centralamericabooks, middleeastbooks, antarcticabooks. 
 
 ### Customer Register and Sign-In <a name="register-sign-in"></a>
 
