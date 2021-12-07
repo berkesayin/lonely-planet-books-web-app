@@ -24,7 +24,11 @@
 * [Customer Register and Sign-In](#register-sign-in)
 * [Asia Books Product Page Customer Layout](#asia-books-customer-panel)
 * [Admin Sign-In Panel](#admin-sign-in)
-
+* [Admin Panel Homepage Layout](#admin-homepage)
+* [Admin Panel Asia Books General View Layout](#admin-asia-general)
+* [Admin Panel Asia Books Add New Product Layout](#admin-asia-add)
+* [Admin Panel Asia Books Update Product Layout](#admin-asia-update)
+* [Admin Panel Asia Books Remove and Activ Operations](#admin-asia-remove-activ)
  
 ### Website Homepage <a name="homepage"></a>
 
@@ -99,5 +103,51 @@ This data is pulled from the database in a dynamic way. When a new user is regis
 ![pic](images/img-readme/admin-sign-in.png)
 
 
+### Admin Panel Homepage Layout <a name="admin-homepage"></a>
+
+- As mentioned above, there are 10 regions, 10 main container categories. This panel can help the admin to reach the every category and than make changes on each of them.
+
+![pic](images/img-readme/admin-homepage.png)
+
+
+### Admin Panel Asia Books General View Layout <a name="admin-asia-general"></a>
+
+
+![pic](images/img-readme/admin-asia-general.png)
+
+- As You can see above this is admin's management page for Asia Books, admin can add, update, delete and change activity of a product. This layout is just a sample of one category (Asia Books). The panel layouts for the other categories are exactly the same. 
+
+
+### Admin Panel Asia Books Add New Product Layout <a name="admin-asia-add"></a>
+
+![pic](images/img-readme/admin-asia-add.png)
+
+- Admin of the system can add a new book clicking the button "Add New Book" here. The record of the new product is first added to the database and then, at the user interface, the data is pulled back to show the informations about the product. So, the operation of adding a new book is controlled in a dynamic way by the manager. 
+
+<br>
+
+- The inputs are equal to the columns at the table inside the database. 
+
+
+### Admin Panel Asia Books Update Product Layout <a name="admin-asia-update"></a>
+
+![pic](images/img-readme/admin-asia-update.png)
+
+- Admin can update a prodoct clicking the button "Update" at the homepage of Asia Books at admin panel. The information record of the product clicked by the admin is shown at the inputs and then admin can make a change as however he/she wants. 
+
+<br>
+
+- New data is recorded first at the database and then at the user interface, the data is pulled back to show the new informations about the product.
+
+
+### Admin Panel Asia Books Remove and Activ Operations <a name="admin-asia-remove-activ"></a>
+
+![pic](images/img-readme/admin-asia-general.png)
+
+- There is a button "Remove" here. If admin wants to remove a product completely, then he can use the button. So, when clicked, the record is deleted from the database and then it is no more shown at the user interface.
+
+<br>
+
+- There is a button "Active" here. If admin wants to remove a product temporariliy, maybe because of the absence of the stock, then he uses here. "Aktif" books are shown whereas "Pasif" books aren't at the user interface. 
 
 
