@@ -24,10 +24,6 @@
 ### Contents
 * [Homepage](#homepage)
 * [Customer Register and Sign-In](#register-sign-in)
-* [Database Design Nedir?](#database-design-nedir)
-* [Popüler Veri Tabanı Yönetim Sistemleri](#popüler-db-yönetim-sistemleri)
-* [SQL Nedir?](#sql-nedir)
-* [Normalisation Nedir?](#normalisation-nedir)
 
  
 ### Website Homepage <a name="homepage"></a>
