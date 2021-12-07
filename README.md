@@ -19,11 +19,11 @@
 - #####  Lonely Planet believes that responsible travel can be a force for good. As a company, the only thing we want to do more than explore the world is protect it for future generations of travellers. So Lonely Planet helps people wishing to explore the world as well as protecting our future. 
 
 
-
-
 ### Contents
 * [Homepage](#homepage)
 * [Customer Register and Sign-In](#register-sign-in)
+* [Asia Books Product Page Customer Layout](#asia-books-customer-panel)
+* [Admin Sign-In Panel](#admin-sign-in)
 
  
 ### Website Homepage <a name="homepage"></a>
@@ -69,3 +69,35 @@ This data is pulled from the database in a dynamic way. When a new user is regis
 - Database Name: customers
 - Table Name: customersinfo
 - Columns: id(Primary Key), name, surname, city, birthdate, email, password, gender.
+
+
+### Asia Books Customer Panel Layout <a name="asia-books-customer-panel"></a>
+
+- All books that is belong to the region Asia is shown and listed here. Customers (users) can take a look at the products and they can add to cart if they want. All the dynamic operations here are managed by the database using MySql by the designer, administrator of the system. 
+
+![pic](images/img-readme/asia-customer.png)
+
+- Customers (users) can filter the books for their content, city, country or the name.
+
+![pic](images/img-readme/asia-customer2.png)
+
+![pic](images/img-readme/asia-customer3.png)
+
+![pic](images/img-readme/asia-customer4.png)
+
+
+- As mentioned above, there are 10 different regions, destinations. So this "Asia Books Customer Panel" layout is just a sample, example of the other 9 regions. So that, other 9 regions's products are listed, shown and filtered with the same graphical user interface and provided by the same database operations.
+
+### Admin Sign - In Panel <a name="admin-sign-in"></a>
+
+- As told earlier, this is a dynamic e-trading web application. So, all the information, data about the customers and products is stored and managed by database and admin panel can be told to be the reflection of the database operations with the interface. So that, admin can add a new product, update a product that already exists and delete, or change the activity of the product with regard to it's stock number. For these operations, there is "Admin Panel" layout for the web application.
+
+<br>
+
+- This is the sign-in page for the admin of the system.
+
+![pic](images/img-readme/admin-sign-in.png)
+
+
+
+
