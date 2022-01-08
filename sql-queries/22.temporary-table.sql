@@ -1,0 +1,1 @@
+CREATE TEMPORARY TABLE newantarctica SELECT * FROM antarcticabooks LIMIT 0;
